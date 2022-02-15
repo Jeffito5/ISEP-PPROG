@@ -1,0 +1,25 @@
+@startuml
+abstract class Contribuinte{
+    String nome
+    String morada
+}
+class Reformado{
+}
+class TrabalhadorContaOutrem{
+}
+class TrabalhadorContaProprio{
+}
+class Desempregado{
+}
+class MainImpostos{
+}
+abstract class ContribuinteComRT{
+}
+
+Contribuinte <|-- Desempregado
+Contribuinte <|-- ContribuinteComRT
+
+ContribuinteComRT <|-- Reformado
+ContribuinteComRT <|-- TrabalhadorContaOutrem
+ContribuinteComRT <|-- TrabalhadorContaProprio
+@enduml

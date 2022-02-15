@@ -1,0 +1,13 @@
+@startuml
+abstract class MembroEscolar
+class Professor
+class Aluno
+class MainMembrosEscolares
+interface Salario
+interface Bolsa
+
+MembroEscolar <|-- Professor
+MembroEscolar <|-- Aluno
+Bolsa <|.. Aluno
+Salario <|.. Professor
+@enduml

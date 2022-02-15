@@ -1,0 +1,14 @@
+@startuml
+abstract class Contador
+abstract class ContadorEletrico
+class ContadorGas
+class MainContadores
+class TarifarioBiHorario
+class TarifarioSimples
+
+Contador <|-- ContadorEletrico
+Contador <|-- ContadorGas
+ContadorEletrico <|-- TarifarioSimples
+ContadorEletrico <|-- TarifarioBiHorario
+
+@enduml

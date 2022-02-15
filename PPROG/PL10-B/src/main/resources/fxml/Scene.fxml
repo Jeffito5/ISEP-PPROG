@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.FXMLController">
+   <children>
+      <Label layoutX="38.0" layoutY="56.0" text="Quantidade de Letras [3,7]:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQuant" layoutX="277.0" layoutY="54.0" prefHeight="31.0" prefWidth="74.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="249.0" AnchorPane.topAnchor="54.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="btnConfirmar" layoutX="448.0" layoutY="54.0" mnemonicParsing="false" onAction="#btnConfirmAction" prefHeight="31.0" prefWidth="132.0" text="Confirmar" />
+      <Button fx:id="btnShiftEsq" layoutX="38.0" layoutY="178.0" mnemonicParsing="false" onAction="#shiftEsquerda" prefHeight="68.0" prefWidth="96.0" text="&lt;&lt;">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnShiftDir" layoutX="466.0" layoutY="178.0" mnemonicParsing="false" onAction="#shiftDireita" prefHeight="68.0" prefWidth="96.0" text="&gt;&gt;">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="lblSwitch" layoutX="135.0" layoutY="167.0" prefHeight="95.0" prefWidth="330.0">
+         <font>
+            <Font size="54.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

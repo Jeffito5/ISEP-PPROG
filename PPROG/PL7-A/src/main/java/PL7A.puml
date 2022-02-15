@@ -1,0 +1,9 @@
+@startuml
+class Tempo
+class Data
+class Empregado
+
+Empregado *-- Data
+Empregado *-- Tempo
+
+@enduml

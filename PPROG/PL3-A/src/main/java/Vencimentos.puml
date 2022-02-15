@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class Trabalhador{
+    String nome
+}
+class TrabalhadorComissao{
+    float salarioBase
+    float vendas
+    float comissao
+}
+class TrabalhadorHora{
+    int numeroHoras
+    float pagamentoHora
+}
+class TrabalhadorPeca{
+    int numeroPecasTipo1
+    int numeroPecasTipo2
+}
+class MainVencimentos
+
+Trabalhador <|-- TrabalhadorComissao
+Trabalhador <|-- TrabalhadorHora
+Trabalhador <|-- TrabalhadorPeca
+@enduml
